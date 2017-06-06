@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.komputer.simplecalculator.CalculateActivity"
+    android:background="@android:color/background_dark" >
+
+    <TableRow
+        android:id="@+id/first_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/firstNumber"
+            android:maxLength="9"
+            android:height="40dp"
+            android:width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:textColorLink="?attr/actionMenuTextColor"
+            android:textCursorDrawable="@null"
+            tools:ignore="LabelFor,RtlHardcoded"
+            android:layout_weight="1" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/secondNumber"
+            android:maxLength="9"
+            android:background="@android:color/background_light"
+            android:layout_height="40dp"
+            android:width="200dp"
+            android:textColorLink="?attr/actionMenuTextColor"
+            android:textCursorDrawable="@null"
+            tools:ignore="LabelFor,RtlHardcoded"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/second_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:text="@string/plus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addButton"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtractButton"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiplicationButton"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/div"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/divideButton"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/third_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/calculation"
+            android:textSize="12sp"
+            android:textColor="@android:color/background_light"
+            android:layout_weight="1"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/result"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:textColor="@android:color/background_light"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/fourth_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:text="@string/_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/two"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/fifth_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:text="@string/_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/four"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/five"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/six"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/sixth_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:text="@string/_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seven"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eight"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nine"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/seventh_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:text="@string/del"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/earse"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="@string/_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zero"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/point"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/point"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+</TableLayout>
